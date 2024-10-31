@@ -1,0 +1,73 @@
+#spyAdminContainer input[type="radio"] { display: none; }
+#spyAdminContainer input[type="radio"] + label { display: inline-block }
+
+#spyAdminContainer input[type="radio"] ~ .tab { display: none }
+#spyAdminContainer #tab1:checked ~ .tab.content1, #tab2:checked ~ .tab.content2 {
+    display: block;
+}
+#spyAdminContainer input[type="radio"] + label {
+    border: 1px solid #999;
+    background: #EEE;
+    padding: 4px 12px;
+    border-radius: 4px 4px 0 0;
+    position: relative;
+    top: 1px;
+}
+#spyAdminContainer input[type="radio"]:checked + label {
+    background: #FFF;
+    border-bottom: 1px solid transparent;
+}
+#spyAdminContainer input[type="radio"] ~ .tab {
+    border-top: 1px solid #999;
+    padding: 12px;
+}
+
+#spyTable {
+    width: 100%;
+}
+#spyTable th {
+    background: black;
+    color:white;
+}
+#spyTable tr {
+    border: 1px solid #CCC;
+    font-size: 0.9em;
+}
+#spyTable td {
+    border-bottom: 1px solid #DDD;
+    padding: 10px;
+}
+
+#spyDeleteAllrecords {
+    float: right;
+    margin: 20px;
+    background: red;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#TB_window {
+    width: 100%!important;
+    top: 50%!important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+    max-height: 100%;
+    max-width: 90%;
+    margin: 0 !important;
+    height: 90%!important;
+}
+#TB_ajaxContent {
+    height: 100%!important;
+    width: 100% !important;
+    /*height: auto !important;*/
+    max-width: 100%;
+    box-sizing: border-box;
+}
+a[data-spyaction] {
+    border:1px solid #000;
+    padding: 2px 5px;
+    color:  black;
+    text-decoration: none;
+}
